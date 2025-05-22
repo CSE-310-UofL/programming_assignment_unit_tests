@@ -22,7 +22,7 @@ TEST(RationalTest, ConstructionFromFloatDouble) {
 
 TEST(RationalTest, ArithmeticWithRational) {
     Rational a(1, 2), b(1, 3);
-    EXPECT_RATIONAL(a + b, 5, -6);
+    EXPECT_RATIONAL(a + b, 5, 6);
     EXPECT_RATIONAL(a - b, 1, 6);
     EXPECT_RATIONAL(a * b, 1, 6);
     EXPECT_RATIONAL(a / b, 3, 2);
